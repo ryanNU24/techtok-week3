@@ -1,0 +1,7 @@
+http://localhost/phpmyadmin/index.php?route=/database/sql&db=medisched_db
+
+http://localhost/MEDISCHED-WEBSITE/medisched-website.html?success=product#products
+
+http://localhost/MEDISCHED-WEBSITE/backend/admin_product_orders.php?success=status_updated
+
+http://localhost/MEDISCHED-WEBSITE/backend/admin_product_orders.php?success=status_updated
