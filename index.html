@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Basic Meta Tags -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>MediSched | Barangay Healthcare Appointment System</title>
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link 
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" 
+    rel="stylesheet"
+  >
+
+  <!-- CSS File -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Header / Navigation -->
+  <header class="header">
+    <nav class="navbar container">
+      <a href="#home" class="logo">
+        <span class="logo-icon">✚</span>
+        <span>MediSched</span>
+      </a>
+
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About Us</a></li>
+        <li><a href="#services" class="nav-link">Service</a></li>
+        <li><a href="#clinic-info" class="nav-link">Clinic Info</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li><a href="#appointment" class="nav-link nav-cta">Book Appointment</a></li>
+        <li><a href="#login" class="nav-link login-link">Login / Sign up</a></li>
+      </ul>
+
+      <!-- Mobile Menu Button -->
+      <button class="menu-toggle" id="menu-toggle" aria-label="Open navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- Hero Section -->
+    <section class="hero section" id="home">
+      <div class="container hero-grid reveal">
+        <div class="hero-text">
+          <p class="eyebrow">Barangay Healthcare Appointment System</p>
+          <h1>Better Care, Better Life.</h1>
+          <p class="hero-subtitle">
+            Book appointments online, check clinic schedules, and get the care you need without the long wait.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#appointment" class="btn btn-primary">Book Appointment</a>
+            <a href="#clinic-info" class="btn btn-secondary">View Clinic Updates</a>
+          </div>
+        </div>
+
+        <div class="hero-image">
+          <img 
+            src="https://images.unsplash.com/photo-1582750433449-648ed127bb54?auto=format&fit=crop&w=900&q=80" 
+            alt="Doctor ready to assist patients"
+          >
+
+          <div class="hero-badge">
+            <strong>SDG 3</strong>
+            <span>Good Health and Well-being</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quick Info Cards -->
+    <section class="quick-info">
+      <div class="container quick-grid">
+        <article class="quick-card reveal">
+          <div class="quick-icon">🤝</div>
+          <h3>Serving Our Community</h3>
+          <p>Accessible and quality healthcare services for everyone in the barangay.</p>
+        </article>
+
+        <article class="quick-card reveal">
+          <div class="quick-icon">❤️</div>
+          <h3>Better Care</h3>
+          <p>Get the right service faster with organized appointment booking.</p>
+        </article>
+
+        <article class="quick-card reveal">
+          <div class="quick-icon">🛡️</div>
+          <h3>Safe & Secure</h3>
+          <p>Your data is protected and your privacy is our priority.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about section" id="about">
+      <div class="container about-grid">
+        <div class="about-image reveal">
+          <img 
+            src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=900&q=80" 
+            alt="Healthcare staff using digital tools"
+          >
+        </div>
+
+        <div class="about-text reveal">
+          <p class="eyebrow">About MediSched</p>
+          <h2>Faster and more organized healthcare access for the community.</h2>
+          <p>
+            MediSched is a web-based appointment and healthcare information system created for barangay health centers.
+            It helps reduce long waiting lines, manual appointment processes, and paper-based records.
+          </p>
+          <p>
+            Patients can book appointments, view clinic schedules, check announcements, and see medicine or vaccine availability before visiting the health center.
+          </p>
+
+          <div class="stats">
+            <div>
+              <h3>Online</h3>
+              <span>Appointment Booking</span>
+            </div>
+            <div>
+              <h3>Live</h3>
+              <span>Clinic Updates</span>
+            </div>
+            <div>
+              <h3>Easy</h3>
+              <span>Patient Access</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services section" id="services">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="eyebrow">Our Services</p>
+          <h2>We offer healthcare services for you and your family.</h2>
+          <p>
+            Choose the health service you need and schedule your visit with less waiting time.
+          </p>
+        </div>
+
+        <div class="services-grid">
+          <article class="service-card reveal">
+            <div class="service-icon">🩺</div>
+            <h3>General Check-up</h3>
+            <p>Regular check-ups to monitor your overall health and wellness.</p>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="service-icon">💉</div>
+            <h3>Immunization</h3>
+            <p>Vaccines to protect children and families from preventable diseases.</p>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="service-icon">🤰</div>
+            <h3>Prenatal Care</h3>
+            <p>Care support for a healthy pregnancy and safe delivery.</p>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="service-icon">👩‍⚕️</div>
+            <h3>Consultation</h3>
+            <p>Medical consultation for common illnesses and health concerns.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Appointment Booking Section -->
+    <section class="appointment section" id="appointment">
+      <div class="container appointment-grid">
+        <div class="appointment-info reveal">
+          <p class="eyebrow">Book an Appointment</p>
+          <h2>Schedule your clinic visit online.</h2>
+          <p>
+            Fill out the patient information, choose your service, and select your preferred schedule.
+            Please wait for confirmation after submitting your request.
+          </p>
+
+          <ul class="check-list">
+            <li>Choose consultation, vaccination, prenatal care, child check-up, or other services.</li>
+            <li>Select your preferred date and time.</li>
+            <li>Receive a confirmation message before your visit.</li>
+          </ul>
+        </div>
+
+        <form class="appointment-form reveal" id="appointment-form">
+          <!-- Patient Information Area -->
+          <div class="form-row">
+            <div class="form-group">
+              <label for="patient-name">Full Name</label>
+              <input type="text" id="patient-name" placeholder="Enter your full name" required>
+            </div>
+
+            <div class="form-group">
+              <label for="age">Age</label>
+              <input type="number" id="age" placeholder="Enter age" required>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="contact-number">Contact Number</label>
+              <input type="tel" id="contact-number" placeholder="09XX XXX XXXX" required>
+            </div>
+
+            <div class="form-group">
+              <label for="service-type">Service Type</label>
+              <select id="service-type" required>
+                <option value="">Select a service</option>
+                <option value="consultation">Consultation</option>
+                <option value="vaccination">Vaccination</option>
+                <option value="prenatal">Prenatal Check-up</option>
+                <option value="child">Child Check-up</option>
+                <option value="other">Other Services</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="address">Address</label>
+            <input type="text" id="address" placeholder="Enter your address" required>
+          </div>
+
+          <!-- Schedule Selection Area -->
+          <div class="form-row">
+            <div class="form-group">
+              <label for="appointment-date">Choose Date</label>
+              <input type="date" id="appointment-date" required>
+            </div>
+
+            <div class="form-group">
+              <label for="appointment-time">Choose Time</label>
+              <select id="appointment-time" required>
+                <option value="">Select time</option>
+                <option value="8:00 AM">8:00 AM</option>
+                <option value="9:00 AM">9:00 AM</option>
+                <option value="10:00 AM">10:00 AM</option>
+                <option value="1:00 PM">1:00 PM</option>
+                <option value="2:00 PM">2:00 PM</option>
+                <option value="3:00 PM">3:00 PM</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="assigned-staff">Available Doctor / Nurse</label>
+            <select id="assigned-staff">
+              <option value="">Select available staff</option>
+              <option value="nurse-ana">Nurse Ana Santos</option>
+              <option value="dr-reyes">Dr. Miguel Reyes</option>
+              <option value="midwife-cruz">Midwife Elena Cruz</option>
+            </select>
+          </div>
+
+          <div class="form-actions">
+            <button type="submit" class="btn btn-primary">Submit Appointment</button>
+            <button type="reset" class="btn btn-secondary">Clear Form</button>
+          </div>
+
+          <p class="confirmation-message" id="confirmation-message">
+            Your appointment request has been submitted. Please wait for confirmation.
+          </p>
+        </form>
+      </div>
+    </section>
+
+    <!-- Clinic Information Section -->
+    <section class="clinic-info section" id="clinic-info">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="eyebrow">Clinic Information</p>
+          <h2>Check schedules and availability before visiting.</h2>
+          <p>
+            View health center details, announcements, medicine availability, and clinic schedules.
+          </p>
+        </div>
+
+        <div class="info-grid">
+          <article class="info-card reveal">
+            <h3>Clinic Hours</h3>
+            <p><strong>Weekdays:</strong> 8:00 AM - 5:00 PM</p>
+            <p><strong>Weekends:</strong> 8:00 AM - 12:00 NN</p>
+          </article>
+
+          <article class="info-card reveal">
+            <h3>Vaccine Availability</h3>
+            <p>Routine child immunization vaccines are available this week.</p>
+            <span class="status available">Available</span>
+          </article>
+
+          <article class="info-card reveal">
+            <h3>Medicine Availability</h3>
+            <p>Basic medicines for fever, cough, and common health concerns are available.</p>
+            <span class="status limited">Limited Stock</span>
+          </article>
+
+          <article class="info-card reveal">
+            <h3>Latest Announcement</h3>
+            <p>Free check-up schedule is open every Wednesday and Friday morning.</p>
+            <span class="status update">Clinic Advisory</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials / Community Feedback Section -->
+    <section class="testimonials section">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="eyebrow">Community Feedback</p>
+          <h2>Designed to support patients and barangay health staff.</h2>
+        </div>
+
+        <div class="testimonial-grid">
+          <article class="testimonial-card reveal">
+            <p>
+              “Booking online helps me avoid long waiting lines, especially when I need a quick consultation.”
+            </p>
+            <div class="client">
+              <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Patient portrait">
+              <div>
+                <h4>Maria D.</h4>
+                <span>Barangay Resident</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="testimonial-card reveal">
+            <p>
+              “The schedule and availability updates make it easier for families to plan their clinic visit.”
+            </p>
+            <div class="client">
+              <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Patient portrait">
+              <div>
+                <h4>Jose R.</h4>
+                <span>Parent</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="testimonial-card reveal">
+            <p>
+              “A digital appointment system can help staff organize patient flow and reduce overcrowding.”
+            </p>
+            <div class="client">
+              <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Healthcare worker portrait">
+              <div>
+                <h4>Nurse Lina</h4>
+                <span>Health Center Staff</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact section" id="contact">
+      <div class="container contact-grid">
+        <div class="contact-info reveal">
+          <p class="eyebrow">Contact Us</p>
+          <h2>We’re here to help.</h2>
+          <p>
+            Reach out to us for questions, appointment concerns, clinic announcements, or health service information.
+          </p>
+
+          <div class="contact-details">
+            <p><strong>Location:</strong> Barangay Health Center, Paco Manila</p>
+            <p><strong>Phone:</strong> (63) 999-888-7777</p>
+            <p><strong>Email:</strong> barangayhealthcenter@gmail.com</p>
+          </div>
+        </div>
+
+        <form class="contact-form reveal" id="contact-form">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" placeholder="Enter your full name" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Your Email</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" rows="5" placeholder="Enter your message"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary form-btn">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Login Placeholder Section -->
+    <section class="login-section section" id="login">
+      <div class="container login-box reveal">
+        <p class="eyebrow">Patient Access</p>
+        <h2>Login / Sign up</h2>
+        <p>
+          This section is a front-end placeholder for future patient registration, login, and admin access features.
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <a href="#home" class="logo footer-logo">
+        <span class="logo-icon">✚</span>
+        <span>MediSched</span>
+      </a>
+
+      <div class="social-links">
+        <a href="#" aria-label="Facebook">Facebook</a>
+        <a href="#" aria-label="Instagram">Instagram</a>
+        <a href="#" aria-label="LinkedIn">LinkedIn</a>
+      </div>
+
+      <p>© 2026 MediSched. Barangay Healthcare Appointment System. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- JavaScript File -->
+  <script src="script.js"></script>
+</body>
+</html>
